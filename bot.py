@@ -97,7 +97,7 @@ async def start(client, message):
 
 
 @tts.on_message(filters.text & ~filters.reply)
-async def texf(client, message):
+async def text(client, message):
     userid = str(message.chat.id)
     if not os.path.isdir(f"./DOWNLOADS/{userid}"):
         os.makedirs(f"./DOWNLOADS/{userid}") 
